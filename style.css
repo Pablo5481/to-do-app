@@ -1,61 +1,52 @@
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
-body {
-font: normal normal 13px/16px "Open Sans", sans-serif;
-background: #dfdfdf;
-}
-
-.container{
-padding: 20px;
-width: 300px;
-margin: 0 auto;
-margin-top: 40px;
-background: white;
-border-radius: 5px;}
-
-form {
-display: inline-block;
-}
-
-input{
-padding: 4px 15px 4px 5px;
-}
-
-#button{
-display: inline-block;
-background-color:#fc999b;
-color:#ffffff;
-border-radius: 5px;
-text-align:center;
-margin-top:2px;
-padding: 5px 15px;
-}
-
-#button:hover{
-cursor: pointer;
-opacity: .8;}
-
-ol {padding-left: 20px;}
-
-ol li {padding: 5px;color:#000;}
-
-ol li:nth-child(even){background: #dfdfdf;}
-
-.strike{text-decoration: line-through;}
-
-li:hover{
-  cursor: pointer;
- }
-
-.delete {
-	display: none;
-}
-
-li > crossOutButton {
-	background: none;
+.button {
+	align-items: center;
+	appearance: button;
+	background-color: #0276FF;
 	border: none;
-	float: right;
-	color: #025f70;
-	font-weight: 800;
+	width: 85%;
+	border-radius: 8px;
+	box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	font-family: "RM Neue",sans-serif;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 10px 4px;
+	padding: 10px 21px;
+	text-align: center;
+	text-transform: capitalize;
+	transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+	touch-action: manipulation;
+	justify-content: space-between;
+  }
+  
+  ul{
+	list-style-type:none;
+  }
+  
+  .navbar {
+  display: flex;
 }
+  
+  .container {
+	text-align: center;
+	align-items: center;
+	margin-top: 5rem;
+  }
+  
+  .pokemon-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  @media all and (max-width : 500px) {
+	.button {
+	  width: 10rem;
+	  font-size: 0.7rem;
+	}
+  
+  }
